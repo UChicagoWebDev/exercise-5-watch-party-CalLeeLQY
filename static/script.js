@@ -144,7 +144,9 @@ function updateRoomName() {
 }
 
 function toggleHide() {
-  document.querySelector(".roomData .edit").classList.remove("hide");
-  document.querySelector(".roomData .display").classList.add("hide");
+  const editDiv = document.querySelector(".roomData .edit");
+  const displayDiv = document.querySelector(".roomData .display");
+  editDiv.classList.toggle("hide");
+  displayDiv.classList.toggle("hide");
 }
 
